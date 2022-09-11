@@ -1,0 +1,11 @@
+{
+  "item.test.ruby": "Ruby",
+  "item.test.sapphire": "Sapphire",
+  "item.test.sapphire.tooltip": "Can be found in jungle biomes",
+  "item.test.sapphire_sword": "Sapphire Sword",
+  "item.test.sapphire_helmet": "Sapphire Helmet",
+  "item.test.sapphire_chestplate": "Sapphire Chestplate",
+  "item.test.sapphire_leggings" : "Sapphire Leggings",
+  "item.test.sapphire_boots" : "Sapphire Boots",
+  "itemGroup.test.general": "General"
+}
