@@ -6,6 +6,8 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
+import static com.moxcodes22.test.registry.ModBlocks.SAPPHIRE_BLOCK;
+import static com.moxcodes22.test.registry.ModBlocks.SAPPHIRE_ORE;
 import static com.moxcodes22.test.registry.ModItems.*;
 
 public class ModGroups {
@@ -20,6 +22,9 @@ public class ModGroups {
                 stacks.add(new ItemStack(SAPPHIRE_CHESTPLATE));
                 stacks.add(new ItemStack(SAPPHIRE_LEGGINGS));
                 stacks.add(new ItemStack(SAPPHIRE_BOOTS));
+                stacks.add(new ItemStack(SAPPHIRE_SWORD));
+                stacks.add(new ItemStack(SAPPHIRE_ORE));
+                stacks.add(new ItemStack(SAPPHIRE_BLOCK));
             })
             .build();
 

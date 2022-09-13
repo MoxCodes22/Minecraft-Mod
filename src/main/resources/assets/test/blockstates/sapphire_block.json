@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "charged=false": {"model": "test:block/sapphire_block"},
+    "charged=true": {"model": "test:block/sapphire_block_charged"}
+  }
+}

@@ -7,5 +7,8 @@
   "item.test.sapphire_chestplate": "Sapphire Chestplate",
   "item.test.sapphire_leggings" : "Sapphire Leggings",
   "item.test.sapphire_boots" : "Sapphire Boots",
-  "itemGroup.test.general": "General"
+  "itemGroup.test.general": "General",
+  "enchantment.test.poison": "Poison",
+  "block.test.sapphire_ore": "Sapphire Ore",
+  "block.test.sapphire_block": "Sapphire Block"
 }

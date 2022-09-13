@@ -5,11 +5,15 @@ import com.moxcodes22.test.armor.SapphireArmorMaterial;
 import com.moxcodes22.test.items.SapphireItem;
 import com.moxcodes22.test.items.SapphireSwordItem;
 import com.moxcodes22.test.items.materials.SapphireToolMaterial;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
+
+import static com.moxcodes22.test.registry.ModBlocks.SAPPHIRE_BLOCK;
+import static com.moxcodes22.test.registry.ModBlocks.SAPPHIRE_ORE;
 
 public class ModItems {
 
@@ -25,10 +29,6 @@ public class ModItems {
     public static final Item SAPPHIRE_BOOTS = new ArmorItem(SapphireArmorMaterial.INSTANCE, EquipmentSlot.FEET, new Item.Settings().group(ModGroups.ITEM_GROUP).group(ItemGroup.COMBAT));
     public static ToolItem SAPPHIRE_SWORD = new SapphireSwordItem(SapphireToolMaterial.INSTANCE, 10, -2F, new Item.Settings().group(ModGroups.ITEM_GROUP).group(ItemGroup.COMBAT));
 
-    //Item Groups
-
-
-
     public static void registerItems(){
         Registry.register(Registry.ITEM, new Identifier(TestMod.MOD_ID, "ruby"), RUBY);
         Registry.register(Registry.ITEM, new Identifier(TestMod.MOD_ID, "sapphire"), SAPPHIRE);
@@ -37,7 +37,8 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(TestMod.MOD_ID, "sapphire_chestplate"), SAPPHIRE_CHESTPLATE);
         Registry.register(Registry.ITEM, new Identifier(TestMod.MOD_ID, "sapphire_leggings"), SAPPHIRE_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier(TestMod.MOD_ID, "sapphire_boots"), SAPPHIRE_BOOTS);
-
+        Registry.register(Registry.ITEM, new Identifier(TestMod.MOD_ID, "sapphire_ore"), new BlockItem(SAPPHIRE_ORE, new FabricItemSettings().group(ModGroups.ITEM_GROUP).group(ItemGroup.BUILDING_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier(TestMod.MOD_ID, "sapphire_block"), new BlockItem(SAPPHIRE_BLOCK, new FabricItemSettings().group(ModGroups.ITEM_GROUP).group(ItemGroup.BUILDING_BLOCKS)));
     }
 
 }
